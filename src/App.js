@@ -26,7 +26,7 @@ class App extends Component {
     this.populateIndexes();
    }
 
-  // create an array of iconIndexesToDisplay
+  // create full array of iconIndexesToDisplay, to be shown in random order
   populateIndexes = () => {
     const iconIndexesToDisplay = [];
     for (let i = 0; i < svgs.length; i++) {
