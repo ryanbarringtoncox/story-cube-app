@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "b80a7f7b66fbf20b7d90e9749ed2fb95",
-    "url": "/story-cube-app/static/media/girl.b80a7f7b.svg"
+    "revision": "d9d670e5868dbd777e5481acc3346cf4",
+    "url": "/story-cube-app/static/media/mountain.d9d670e5.svg"
   },
   {
-    "revision": "17614b97dabc98923de0",
+    "revision": "9eb9efc194f3d4717d18",
     "url": "/story-cube-app/static/css/main.fa05b69f.chunk.css"
   },
   {
@@ -36,24 +36,36 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/media/castle.31452360.svg"
   },
   {
-    "revision": "7cc2344c217f619fe06b8572db420b84",
-    "url": "/story-cube-app/static/media/cloak.7cc2344c.svg"
+    "revision": "ebc93b435dec6fabc805eaf2cc10f78f",
+    "url": "/story-cube-app/static/media/chinese-rabbit.ebc93b43.svg"
   },
   {
     "revision": "4b25d959a024b59758be3a9d1d3ea309",
     "url": "/story-cube-app/static/media/dragon.4b25d959.svg"
   },
   {
-    "revision": "17614b97dabc98923de0",
-    "url": "/story-cube-app/static/js/main.55817916.chunk.js"
+    "revision": "e8abd4538b012cbaddc384e4d1079bc2",
+    "url": "/story-cube-app/static/media/electric-guitar.e8abd453.svg"
   },
   {
-    "revision": "d9d670e5868dbd777e5481acc3346cf4",
-    "url": "/story-cube-app/static/media/mountain.d9d670e5.svg"
+    "revision": "b80a7f7b66fbf20b7d90e9749ed2fb95",
+    "url": "/story-cube-app/static/media/girl.b80a7f7b.svg"
+  },
+  {
+    "revision": "9eb9efc194f3d4717d18",
+    "url": "/story-cube-app/static/js/main.509d38ba.chunk.js"
+  },
+  {
+    "revision": "003205234dc5049328301f29bec24291",
+    "url": "/story-cube-app/static/media/penguins.00320523.svg"
   },
   {
     "revision": "a99523bb003d7cc712ef06153e981594",
     "url": "/story-cube-app/static/media/ship.a99523bb.svg"
+  },
+  {
+    "revision": "8877d7c21bf9f366af732a3097f95f0e",
+    "url": "/story-cube-app/static/media/snake.8877d7c2.svg"
   },
   {
     "revision": "85d137cf64699e5e04c7e964918ab090",
@@ -88,7 +100,7 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/css/2.1061f6be.chunk.css"
   },
   {
-    "revision": "558c450c5f82f37075ad38a334845400",
+    "revision": "bbe0777f740368deb000e1e7b013ffdc",
     "url": "/story-cube-app/index.html"
   }
 ];

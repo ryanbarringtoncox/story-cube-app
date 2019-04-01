@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/story-cube-app/precache-manifest.e0bb4537355b89abd68582851d2f38d0.js"
+  "/story-cube-app/precache-manifest.b561113673676aaba1afe2bc49487f2b.js"
 );
 
 workbox.clientsClaim();
