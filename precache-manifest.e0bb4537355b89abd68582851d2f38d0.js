@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "d9d670e5868dbd777e5481acc3346cf4",
-    "url": "/story-cube-app/static/media/mountain.d9d670e5.svg"
+    "revision": "b80a7f7b66fbf20b7d90e9749ed2fb95",
+    "url": "/story-cube-app/static/media/girl.b80a7f7b.svg"
   },
   {
-    "revision": "959fed9e64a0fb4402cc",
+    "revision": "17614b97dabc98923de0",
     "url": "/story-cube-app/static/css/main.fa05b69f.chunk.css"
   },
   {
@@ -32,40 +32,32 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/media/bow-and-arrow.88e9e3c6.svg"
   },
   {
-    "revision": "f8d417fe8cab269bd7d21d4fabd58dca",
-    "url": "/story-cube-app/static/media/butterfly.f8d417fe.svg"
-  },
-  {
     "revision": "3145236045ca3580bb7af175975970d7",
     "url": "/story-cube-app/static/media/castle.31452360.svg"
+  },
+  {
+    "revision": "7cc2344c217f619fe06b8572db420b84",
+    "url": "/story-cube-app/static/media/cloak.7cc2344c.svg"
   },
   {
     "revision": "4b25d959a024b59758be3a9d1d3ea309",
     "url": "/story-cube-app/static/media/dragon.4b25d959.svg"
   },
   {
-    "revision": "b80a7f7b66fbf20b7d90e9749ed2fb95",
-    "url": "/story-cube-app/static/media/girl.b80a7f7b.svg"
+    "revision": "17614b97dabc98923de0",
+    "url": "/story-cube-app/static/js/main.55817916.chunk.js"
   },
   {
-    "revision": "959fed9e64a0fb4402cc",
-    "url": "/story-cube-app/static/js/main.c6fa8c49.chunk.js"
+    "revision": "d9d670e5868dbd777e5481acc3346cf4",
+    "url": "/story-cube-app/static/media/mountain.d9d670e5.svg"
   },
   {
     "revision": "a99523bb003d7cc712ef06153e981594",
     "url": "/story-cube-app/static/media/ship.a99523bb.svg"
   },
   {
-    "revision": "4d833fe22f3a8c90fb695800f2f0d72e",
-    "url": "/story-cube-app/static/media/snake.4d833fe2.svg"
-  },
-  {
     "revision": "85d137cf64699e5e04c7e964918ab090",
     "url": "/story-cube-app/static/media/spaceship.85d137cf.svg"
-  },
-  {
-    "revision": "355ea86f73e9f1ba83b3cf3635cbcd98",
-    "url": "/story-cube-app/static/media/storm.355ea86f.svg"
   },
   {
     "revision": "a5945f160bf8c0f41e2214e4a48b9200",
@@ -96,7 +88,7 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/css/2.1061f6be.chunk.css"
   },
   {
-    "revision": "ba28a77f0d63fad367b64febcfe53895",
+    "revision": "558c450c5f82f37075ad38a334845400",
     "url": "/story-cube-app/index.html"
   }
 ];
