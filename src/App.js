@@ -4,8 +4,7 @@ import './App.css';
 
 // TODOs: 
 // 1. optimize svgs, perhaps into one large sprite
-// 2. deployment webpack stuff
-// 3. better ui for for beginning, ending of app
+// 2. better ui for for beginning, ending of app
 
 // set up icons from dir
 const reqSvgs = require.context ( './icons', true, /\.svg$/ )
@@ -18,7 +17,7 @@ class App extends Component {
     super(props);
     this.state = {
       currentIcon : '',
-      message: "Click the book to begin your story",
+      message: "Click/tap the book to begin your story",
     }
   }
 
