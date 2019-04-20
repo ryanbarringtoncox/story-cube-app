@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/media/mountain.d9d670e5.svg"
   },
   {
-    "revision": "9eb9efc194f3d4717d18",
+    "revision": "df37c6b2b6c29abf6253",
     "url": "/story-cube-app/static/css/main.fa05b69f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/media/wolf.27d9103d.svg"
   },
   {
-    "revision": "6d43bae7acdfd81e1d1d",
-    "url": "/story-cube-app/static/js/2.676b93aa.chunk.js"
+    "revision": "a1fc38fbc3e171adc487",
+    "url": "/story-cube-app/static/js/2.f3d6c536.chunk.js"
   },
   {
     "revision": "e70a547cb9a1c4466fbb61c544a37cff",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/media/girl.b80a7f7b.svg"
   },
   {
-    "revision": "9eb9efc194f3d4717d18",
-    "url": "/story-cube-app/static/js/main.509d38ba.chunk.js"
+    "revision": "df37c6b2b6c29abf6253",
+    "url": "/story-cube-app/static/js/main.2e4a8a4e.chunk.js"
   },
   {
     "revision": "003205234dc5049328301f29bec24291",
@@ -96,11 +96,11 @@ self.__precacheManifest = [
     "url": "/story-cube-app/static/media/wizard.825fff07.svg"
   },
   {
-    "revision": "6d43bae7acdfd81e1d1d",
+    "revision": "a1fc38fbc3e171adc487",
     "url": "/story-cube-app/static/css/2.1061f6be.chunk.css"
   },
   {
-    "revision": "bbe0777f740368deb000e1e7b013ffdc",
+    "revision": "9abab6029aa3756cb014080dc2552a8e",
     "url": "/story-cube-app/index.html"
   }
 ];
