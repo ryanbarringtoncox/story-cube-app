@@ -1,80 +1,80 @@
 import React, { Component } from 'react';
-import book from './book.svg';
+import book from './book.svg'; // book svg is default icon
 import './App.css';
 
-// TODOs: 
-// 1. optimize svgs, perhaps into one large sprite
-// 2. better ui for for beginning, ending of app
+// set up story symbol icons from svgs in icons dir
+const reqSvgs = require.context('./icons', true, /\.svg$/);
+const paths = reqSvgs.keys ();
+const icons = paths.map(path => reqSvgs(path));
 
-// set up icons from dir
-const reqSvgs = require.context ( './icons', true, /\.svg$/ )
-const paths = reqSvgs.keys ()
-const svgs = paths.map( path => reqSvgs ( path ) )
+// shuffles array
+const shuffle = a => {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}  
 
-class App extends Component {
+export default class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      currentIcon : '',
+      currentIconIndex : null,
       message: "Click/tap the book to begin your story",
     }
   }
 
   componentDidMount = () => {
-    this.populateIndexes();
-   }
-
-  // create full array of iconIndexesToDisplay, to be shown in random order
-  populateIndexes = () => {
-    const iconIndexesToDisplay = [];
-    for (let i = 0; i < svgs.length; i++) {
-      iconIndexesToDisplay.push(i); 
-    }
-    this.setState({ iconIndexesToDisplay: iconIndexesToDisplay });
+    shuffle(icons);
   }
 
   // sets state to new icon, removes index from iconIndexesToDisplay
   getIcon = () => {
     const {
-      iconIndexesToDisplay,
+      currentIconIndex,
     } = this.state;
 
-    // return to beginning if it's over...
-    if (iconIndexesToDisplay.length === 0) {
-      this.populateIndexes();
+    // if it's the end of the icons array, reset app to initial state
+    if (currentIconIndex === icons.length - 1) {
       this.setState({
-        currentIcon : '',
+        currentIconIndex : null,
         message: "Click the book to begin your story",
       });
       return;
     }
 
-    const positionOfNextIconIndex = Math.floor(Math.random()*iconIndexesToDisplay.length);
-    const nextIconIndex = iconIndexesToDisplay[positionOfNextIconIndex];
-    const copyOfIconIndexes = iconIndexesToDisplay;
-    copyOfIconIndexes.splice(positionOfNextIconIndex, 1);
-    this.setState({
-      currentIcon: svgs[nextIconIndex],
-      iconIndexesToDisplay: copyOfIconIndexes,
-      message: copyOfIconIndexes.length === 0 ? "That's the end!" : "",
-    })
+    // if it's the first click of a new story, set index to 0
+    if (currentIconIndex === null) {
+      this.setState({
+        currentIconIndex:  0,
+        message: '',
+      });
+    } else { // else increment and check for ending
+      this.setState({
+        currentIconIndex: currentIconIndex + 1,
+        message: currentIconIndex === icons.length - 2 ? "(last symbol)" : "",
+      });
+    }
   };
 
   render() {
     const {
-      currentIcon,
+      currentIconIndex,
       message,
     } = this.state;
     return (
       <div className="App">
         <div onClick={this.getIcon} className="icon-wrapper">
-            <img src={currentIcon? currentIcon : book} className="icon" alt={currentIcon} />
-            <div>{message}</div>
-          </div>
-      </div>
+          <img
+            className="icon"
+            src={currentIconIndex === null ? book : icons[currentIconIndex]}
+            alt={currentIconIndex === null? book : icons[currentIconIndex]}
+          />
+          <div>{message}</div>
+        </div>
+        </div>
     );
   }
 }
-
-export default App;
